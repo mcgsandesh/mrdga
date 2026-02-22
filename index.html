@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="mr">
 <head>
   <meta charset="UTF-8">
-  <title>MRDGA Demo</title>
+  <title>MRDGA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>MRDGA Demo Website</h1>
-  <p>GitHub Pages working successfully.</p>
+
+<header>
+  <div class="container">
+    <h1 id="siteTitle">महाराष्ट्र राज्य दहीहंडी गोविंदा असोसिएशन</h1>
+
+    <nav>
+      <a href="#home" data-key="menuHome">Home</a>
+      <a href="#about" data-key="menuAbout">About</a>
+      <a href="#programs" data-key="menuPrograms">Programs</a>
+      <a href="#members" data-key="menuMembers">Members</a>
+      <a href="#districts" data-key="menuDistricts">Districts</a>
+    </nav>
+
+    <div class="lang-switch">
+      <button onclick="setLang('mr')">मराठी</button>
+      <button onclick="setLang('en')">English</button>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <h2 data-key="heroTitle">गोविंदा परंपरेचा अभिमान</h2>
+  <p data-key="heroDesc">
+    महाराष्ट्रातील गोविंदा पथकांसाठी अधिकृत राज्यस्तरीय संघटना
+  </p>
+</section>
+
+<section id="about" class="section">
+  <h2 data-key="aboutTitle">आमच्याबद्दल</h2>
+  <p data-key="aboutText">
+    महाराष्ट्र राज्य दहीहंडी गोविंदा असोसिएशन ही गोविंदा पथकांच्या
+    सुरक्षितता, स्पर्धा आणि हक्कांसाठी कार्यरत आहे.
+  </p>
+</section>
+
+<section id="programs" class="section">
+  <h2 data-key="programsTitle">कार्यक्रम</h2>
+  <p data-key="programsText">
+    आजपर्यंत विविध जिल्ह्यांमध्ये दहीहंडी स्पर्धांचे आयोजन.
+  </p>
+</section>
+
+<section id="members" class="section">
+  <h2 data-key="membersTitle">कार्यकारिणी</h2>
+  <p data-key="membersText">
+    अध्यक्ष, सचिव, खजिनदार व इतर सदस्यांची माहिती.
+  </p>
+</section>
+
+<section id="districts" class="section">
+  <h2 data-key="districtsTitle">जिल्हा संघटना</h2>
+  <p data-key="districtsText">
+    मुंबई शहर, मुंबई उपनगर व इतर जिल्हा संघटना.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 MRDGA | All Rights Reserved</p>
+</footer>
+
+<!-- JS -->
+<script src="js/lang.js"></script>
 </body>
 </html>
