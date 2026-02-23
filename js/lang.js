@@ -37,9 +37,12 @@ const content = {
   }
 };
 
+let currentLang = 'en';
+
 function setLang(lang) {
-  document.querySelectorAll("[data-key]").forEach(el => {
-    const key = el.getAttribute("data-key");
-    el.innerText = content[lang][key];
+  currentLang = lang;
+
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.innerText = el.getAttribute(`data-${lang}`);
   });
 }
