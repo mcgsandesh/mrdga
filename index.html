@@ -1,139 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
 <head>
-  <meta charset="UTF-8">
-  <title>MRDGA</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>महाराष्ट्र राज्य दहीहंडी गोविंदा असोसिएशन - Premium</title>
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-100 text-gray-800">
-<!-- Navbar -->
-<nav class="bg-slate-900 text-white shadow">
-  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+<body class="selection:bg-orange-200">
 
-    <!-- Logo / Title -->
-    <div class="text-lg font-semibold">
-      MRDGA
-    </div>
+    <!-- Navigation -->
+    <header class="glass-nav sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3 group cursor-pointer" onclick="navigate('home')">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-orange-500 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg transform group-hover:rotate-12 transition-transform">
+                    <span class="text-white font-bold text-xl sm:text-2xl">M</span>
+                </div>
+                <div class="hidden xs:block">
+                    <h1 class="text-base sm:text-lg font-extrabold text-white leading-tight">महाराष्ट्र राज्य दहीहंडी</h1>
+                    <p class="text-[8px] sm:text-[10px] uppercase tracking-[0.2em] text-orange-400 font-bold">गोविंदा असोसिएशन</p>
+                </div>
+            </div>
+            <nav id="navbar" class="flex items-center space-x-1 sm:space-x-4 text-xs sm:text-sm font-semibold text-gray-300">
+                <button class="nav-link-premium active" data-page="home">Home</button>
+                <button class="nav-link-premium" data-page="register">Registration</button>
+                <button class="nav-link-premium" data-page="events">Events</button>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Menu -->
-    <div class="hidden md:flex space-x-6 text-sm">
-      <a href="#about" class="hover:text-slate-300">About</a>
-      <a href="#programs" class="hover:text-slate-300">Programs</a>
-      <a href="#members" class="hover:text-slate-300">Members</a>
-    </div>
+    <!-- Main Content -->
+    <main id="app-content" class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 min-h-screen">
+        <!-- JS will inject content here -->
+    </main>
 
-    <!-- Language Toggle -->
-    <div class="flex space-x-2 text-xs">
-      <button onclick="setLang('en')" class="px-3 py-1 rounded bg-slate-700 hover:bg-slate-600">
-        EN
-      </button>
-      <button onclick="setLang('mr')" class="px-3 py-1 rounded bg-slate-700 hover:bg-slate-600">
-        मराठी
-      </button>
-    </div>
+    <!-- Footer -->
+    <footer class="bg-indigo-950 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center border-t border-indigo-900 pt-8">
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <p class="text-lg font-bold">महाराष्ट्र राज्य दहीहंडी गोविंदा असोसिएशन</p>
+                <p class="text-gray-400 text-sm">प्रगती, सुरक्षा आणि परंपरा जपण्यासाठी सदैव तत्पर.</p>
+            </div>
+            <div class="flex space-x-6 text-sm">
+                <a href="#" class="hover:text-orange-400">Privacy Policy</a>
+                <a href="#" class="hover:text-orange-400">Contact Us</a>
+            </div>
+        </div>
+    </footer>
 
-  </div>
-</nav>
-  <!-- Header -->
-  <main class="bg-gray-50">
-
-  <!-- Hero -->
-  <section class="max-w-7xl mx-auto px-4 py-12 text-center">
-    <h1 class="text-3xl font-bold text-slate-800 mb-3"
-        data-en="Maharashtra Rajya Dahihandi Govinda Association"
-        data-mr="महाराष्ट्र राज्य दहीहंडी गोविंदा असोसिएशन">
-    </h1>
-
-    <p class="text-slate-600 max-w-3xl mx-auto"
-       data-en="Official state-level association dedicated to Govinda sport and culture."
-       data-mr="गोविंदा खेळ आणि संस्कृतीसाठी समर्पित राज्यस्तरीय अधिकृत संघटना.">
-    </p>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="max-w-7xl mx-auto px-4 py-10">
-    <h2 class="text-xl font-semibold text-slate-800 mb-2"
-        data-en="About Association"
-        data-mr="संस्थेबद्दल">
-    </h2>
-
-    <p class="text-slate-600"
-       data-en="The association works for regulation, growth and safety of Dahihandi competitions."
-       data-mr="दहीहंडी स्पर्धांचे नियमन, विकास आणि सुरक्षितता यासाठी संस्था कार्यरत आहे.">
-    </p>
-  </section>
-
-  <!-- Programs -->
-  <section id="programs" class="bg-white py-10">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-xl font-semibold text-slate-800 mb-4"
-          data-en="Programs & Activities"
-          data-mr="कार्यक्रम आणि उपक्रम">
-      </h2>
-
-      <ul class="list-disc list-inside text-slate-600 space-y-1">
-        <li data-en="State level Dahihandi competitions"
-            data-mr="राज्यस्तरीय दहीहंडी स्पर्धा"></li>
-        <li data-en="Govinda training & safety awareness"
-            data-mr="गोविंदा प्रशिक्षण व सुरक्षितता जनजागृती"></li>
-        <li data-en="District & city level coordination"
-            data-mr="जिल्हा व शहरस्तरीय समन्वय"></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Members -->
-  <section id="members" class="max-w-7xl mx-auto px-4 py-10">
-    <h2 class="text-xl font-semibold text-slate-800 mb-2"
-        data-en="Members"
-        data-mr="सदस्य">
-    </h2>
-
-    <p class="text-slate-600"
-       data-en="State committee, district associations and registered member organizations."
-       data-mr="राज्य समिती, जिल्हा संघटना व नोंदणीकृत सदस्य संस्था.">
-    </p>
-  </section>
-
-</main>
-
-</body>
-
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
-    <div class="max-w-7xl mx-auto px-4 py-20 text-center">
-      <h2 class="text-4xl font-bold mb-4">
-        Welcome to MRDGA Platform
-      </h2>
-      <p class="text-lg mb-6">
-        Smart, Simple & Digital Management System
-      </p>
-      <button class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">
-        Get Started
-      </button>
-    </div>
-  </section>
-
-  <!-- Content -->
-  <section class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-3 gap-8">
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h3 class="text-xl font-semibold mb-2">Fast</h3>
-      <p>Quick access and smooth experience.</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h3 class="text-xl font-semibold mb-2">Secure</h3>
-      <p>Safe & reliable data handling.</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h3 class="text-xl font-semibold mb-2">Responsive</h3>
-      <p>Works on mobile, tablet & desktop.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white text-center py-4">
-    © 2026 MRDGA. All rights reserved.
-  </footer>
-
+    <!-- Link to your JS file -->
+    <script src="js/lang.js"></script>
 </body>
 </html>
