@@ -11,11 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 
                 <div class="mb-10">
+                    <!-- Title Line 1 -->
                     <h2 class="hero-subtitle text-xl md:text-4xl font-extrabold text-indigo-900 mb-4 tracking-tight">
                         शौर्य, उत्साह आणि परंपरेचा मान
                     </h2>
-                    <h1 class="hero-title text-3xl md:text-7xl lg:text-8xl font-black text-indigo-950 mb-8 lg:whitespace-nowrap overflow-hidden">
-                        <span class="orange-gradient-text">महाराष्ट्र राज्य दहीहंडी गोविंदा असोसिएशन</span>
+                    <!-- Main Association Name (Fixed for Desktop wrapping) -->
+                    <h1 class="hero-title text-3xl md:text-6xl lg:text-7xl font-black text-indigo-950 mb-8 leading-tight">
+                        <span class="orange-gradient-text block lg:inline">महाराष्ट्र राज्य दहीहंडी</span> 
+                        <span class="orange-gradient-text block lg:inline">गोविंदा असोसिएशन</span>
                     </h1>
                 </div>
 
@@ -52,6 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p class="text-gray-500 leading-relaxed font-medium text-sm sm:text-base">उत्कृष्ट आणि शिस्तबद्ध कामगिरी करणाऱ्या पथकांना राज्यस्तरावर सन्मानित केले जाते.</p>
                 </div>
             </div>
+
+           
         `,
         register: () => `
             <div class="max-w-4xl mx-auto flex flex-col md:flex-row premium-card overflow-hidden" style="animation: fadeIn 0.5s ease-out;">
