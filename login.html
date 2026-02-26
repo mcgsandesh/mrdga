@@ -1,0 +1,69 @@
+<!--Login.html-->
+<div class="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-blue-50 to-orange-50">
+  <div class="bg-white p-8 rounded-3xl shadow-xl w-full max-w-sm border border-white">
+    
+    <div class="mb-8">
+      <button onclick="openGuestForm()" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-black py-4 rounded-2xl shadow-lg shadow-orange-100 transition-all active:scale-95 flex items-center justify-center gap-2 uppercase tracking-widest text-xs">
+        <i class="fas fa-plus-circle"></i> नवीन नोंदणी / सर्च
+      </button>
+      <p class="text-[9px] text-center text-gray-400 mt-2 font-bold uppercase tracking-tighter">नवीन टीम्स किंवा जुन्या डेटासाठी येथे क्लिक करा</p>
+    </div>
+
+    <div class="relative flex items-center mb-8">
+      <div class="flex-grow border-t border-gray-100"></div>
+      <span class="flex-shrink mx-4 text-[10px] font-black text-gray-300 uppercase tracking-widest">किंवा लॉगिन करा</span>
+      <div class="flex-grow border-t border-gray-100"></div>
+    </div>
+
+    <div class="space-y-4">
+      <div class="text-center mb-4">
+        <h2 class="text-xl font-black text-blue-900 uppercase">Login</h2>
+        <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Admin & Insurance Team</p>
+      </div>
+
+      <div>
+        <label class="block text-[9px] font-bold text-gray-500 uppercase ml-1 mb-1 italic">Email ID</label>
+        <div class="relative">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400 text-xs">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <input type="email" id="login-email" class="w-full pl-10 pr-4 py-3 border border-gray-50 rounded-xl focus:ring-2 focus:ring-blue-500 bg-gray-50 outline-none text-xs font-bold transition" placeholder="example@gmail.com">
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-[9px] font-bold text-gray-500 uppercase ml-1 mb-1 italic">Password</label>
+        <div class="relative">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400 text-xs">
+            <i class="fas fa-lock"></i>
+          </span>
+          <input type="password" id="login-password" class="w-full pl-10 pr-4 py-3 border border-gray-50 rounded-xl focus:ring-2 focus:ring-blue-500 bg-gray-50 outline-none text-xs font-bold transition" placeholder="••••••••">
+        </div>
+      </div>
+
+      <button onclick="handleLogin()" id="login-btn" class="w-full bg-blue-900 hover:bg-black text-white font-bold py-3.5 rounded-xl shadow-lg shadow-blue-100 transition-all active:scale-95 mt-4 text-xs uppercase tracking-widest">
+        प्रवेश करा <i class="fas fa-arrow-right ml-2 text-[10px]"></i>
+      </button>
+    </div>
+
+    <footer class="mt-10 pb-2 pt-4 border-t border-gray-100">
+      <div class="flex flex-col items-center justify-center space-y-3">
+        <div class="flex items-center space-x-2">
+          <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest">Developed by</span>
+          <span class="text-[10px] font-black bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            SANDESH MAHADIK
+          </span>
+        </div>
+
+        <a href="https://wa.me/919819000880" target="_blank" 
+           class="flex items-center bg-emerald-50 text-emerald-600 px-4 py-1.5 rounded-full hover:bg-emerald-100 transition-all duration-300">
+          <i class="fab fa-whatsapp text-sm mr-2"></i>
+          <span class="text-[10px] font-black uppercase tracking-tight">Contact Developer</span>
+        </a>
+
+        <p class="text-[8px] text-gray-300 font-bold uppercase">© MRDGA Insurance Portal • v2.0</p>
+      </div>
+    </footer>
+
+  </div>
+</div>

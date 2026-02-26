@@ -8,25 +8,23 @@
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Link to your CSS file -->
+    <!-- External CSS Link -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="selection:bg-orange-200">
+<body class="selection:bg-orange-200 bg-slate-50">
 
     <!-- Navigation -->
     <header class="glass-nav sticky top-0 z-50 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
             
-            <!-- Logo and Full Name Section -->
+            <!-- Logo Section -->
             <div class="flex items-center space-x-3 group cursor-pointer" onclick="navigate('home')">
-                <!-- 'M' Logo Box -->
                 <div class="w-10 h-10 sm:w-12 sm:h-12 bg-orange-500 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg transform group-hover:rotate-12 transition-transform shrink-0">
                     <span class="text-white font-bold text-xl sm:text-2xl">M</span>
                 </div>
                 
-                <!-- Full Association Name (Text) -->
-                <div class="flex flex-col justify-center">
-                    <h1 class="text-[10px] sm:text-lg font-extrabold text-white leading-tight uppercase tracking-tight">
+                <div class="flex flex-col justify-center text-white text-left">
+                    <h1 class="text-[10px] sm:text-lg font-extrabold leading-tight uppercase tracking-tight">
                         महाराष्ट्र राज्य दहीहंडी
                     </h1>
                     <p class="text-[7px] sm:text-[10px] uppercase tracking-[0.1em] text-orange-400 font-bold">
@@ -35,33 +33,37 @@
                 </div>
             </div>
             
-            <!-- Desktop Navigation Links -->
-            <nav id="navbar" class="flex items-center space-x-1 sm:space-x-4 text-xs sm:text-sm font-semibold text-gray-300">
+            <!-- Nav Links -->
+            <nav id="navbar" class="flex flex-wrap justify-center items-center gap-2 sm:gap-4 text-[10px] sm:text-xs font-semibold text-gray-300">
                 <button class="nav-link-premium active" data-page="home">Home</button>
-                <button class="nav-link-premium" data-page="register">Registration</button>
-                <button class="nav-link-premium" data-page="events">Events</button>
+                <button class="nav-link-premium" data-page="competitions">Competitions</button>
+                <button class="nav-link-premium" data-page="achievements">Achievements</button>
+                <button class="nav-link-premium" data-page="insurance">Insurance</button>
+               
             </nav>
         </div>
     </header>
 
     <!-- Main Content -->
     <main id="app-content" class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 min-h-screen">
-        <!-- JS will inject content here from js/lang.js -->
+        <!-- JS will inject content here -->
     </main>
 
     <!-- Footer -->
     <footer class="bg-indigo-950 text-white py-12">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center border-t border-indigo-900 pt-8">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center border-t border-indigo-900 pt-8 gap-6">
             <div class="mb-6 md:mb-0 text-center md:text-left">
                 <p class="text-lg font-bold">महाराष्ट्र राज्य दहीहंडी गोविंदा असोसिएशन</p>
                 <p class="text-gray-400 text-sm">प्रगती, सुरक्षा आणि परंपरा जपण्यासाठी सदैव तत्पर.</p>
             </div>
-            <div class="flex space-x-6 text-sm">
-                <a href="#" class="hover:text-orange-400">Privacy Policy</a>
-                <a href="#" class="hover:text-orange-400">Contact Us</a>
-            </div>
-                     <!-- Developer Credit - Small & Light -->
-                <div class="flex items-center space-x-2 text-[10px] text-indigo-400 font-medium">
+            
+            <div class="flex flex-col items-center md:items-end space-y-4">
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="hover:text-orange-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-orange-400">Contact Us</a>
+                </div>
+                
+                <div class="flex items-center space-x-2 text-[10px] text-indigo-400 font-medium border-t border-indigo-900/50 pt-4">
                     <span>Developed by Sandesh R Mahadik</span>
                     <a href="https://wa.me/919819000880" target="_blank" class="hover:text-green-400 transition-colors">
                         <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
@@ -69,12 +71,11 @@
                         </svg>
                     </a>
                 </div>
+            </div>
         </div>
-
-        
     </footer>
 
-    <!-- Link to your JS file -->
+    <!-- JS Scripts -->
     <script src="js/lang.js"></script>
 </body>
 </html>
